@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><!--Designed by xiangshen
+  CNU Bioinformatics Center
+  2010.5.16-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<SCRIPT LANGUAGE="JavaScript">/*时钟显示*/
+
+　　function gettime()
+　　{ var t = new Date();
+　　var hours = t.getHours();
+　　var minutes = t.getMinutes();
+　　var seconds = t.getSeconds();
+　　var show_str ="";
+　　show_str +=(hours >= 12) ? "下午 ": "上午 ";
+　　show_str += ((hours > 12) ? hours : hours);
+　　show_str += ((minutes < 10) ? ":0" : ":") + minutes;
+　　show_str += ((seconds < 10) ? ":0" : ":") + seconds;
+　　document.show_time.name1.value = show_str;
+　　timerID = setTimeout("gettime()",1000);
+　　}
+　　</script>
+
+<title>Xiangshen</title>
+<style type="text/css">
+<!--
+
+.STYLE2 {
+	font-family: "宋体";
+	color: #FF0000;
+}
+.STYLE3 {
+	font-size: 24px;
+	color: #0000FF;
+}
+.STYLE4 {color: #FF0000}
+body {
+	background-image: url();
+	background-repeat: no-repeat;
+	background-color: #52D1E4;
+}
+.STYLE7 {font-size: 12px}
+.STYLE8 {color: #660000}
+a{TEXT-DECORATION:none}a.xh{TEXT-DECORATION:none}a:hover.xh{TEXT-DECORATION:underline} /*去除超链接下划线*/
+.STYLE9 {font-size: xx-small}
+.STYLE10 {color: #0000FF}
+.STYLE11 {font-size: 16px; color: #0000FF; }
+.pagetitle {height:20;line-height:150%;FILTER:Glow(Color=#a0ffa0,Strength=5);font-size:18pt;text-align:center} /*字体光边*/
+.STYLE15 {color: #000000}
+.STYLE17 {
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+}
+.STYLE18 {font-size: 24px}
+.STYLE24 {
+	font-size: x-large;
+	font-family: "Times New Roman", Times, serif;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 182px;
+	top: 562px;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:2;
+	left: 33px;
+	top: 155px;
+}
+#Layer3 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+	left: 988px;
+	top: 1001px;
+}
+#Layer4 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:4;
+	left: 673px;
+	top: 1371px;
+}
+#Layer5 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:4;
+	left: 655px;
+	top: 1410px;
+}
+#Layer6 {
+	position:absolute;
+	width:416px;
+	height:100px;
+	z-index:4;
+	left: 657px;
+	top: 1481px;
+}
+#Layer7 {
+	position:absolute;
+	width:201px;
+	height:55px;
+	z-index:5;
+	left: 723px;
+	top: 471px;
+}
+.STYLE26 {font-family: "宋体"; color: #FF0000; font-size: 36px; }
+#Layer8 {
+	position:absolute;
+	width:150px;
+	height:79px;
+	z-index:6;
+	left: 712px;
+	top: 1014px;
+}
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"></head>
+
+<body onLoad="gettime()">
+
+  <p><blink class="STYLE3 STYLE15" ><strong class=pagetitle>Server</strong></blink> 
+    <span class="STYLE3"><a href="http://bioinfor.cnu.edu.cn/Plant_REBase/index.php" class="i1" target=_blank>Plant_REBbase</a> <span class="STYLE3"><a href="http://bioinfor.cnu.edu.cn/blast/" class="i1" target=_blank>Blast</a> <a href="http://bioinfor.cnu.edu.cn/ifsearch/"target=_blank>IFsearch</a>  <a href="http://192.168.100.13/p450/"target=_blank>p450</a> <a href="http://192.168.100.13/phpmyadmin/"target=_blank>100.13</a> <a href="http://124.42.63.52:8080/Portal/"target=_blank>云</a> <a href="https://dl-web.dropbox.com/get/worldtime.html?w=AACnZrmxDalMB567LcgSl5MX_ZgX2tRQzzQoMYFjasWLsg"target=_blank>WorldTime</a></p>
+  <!-- 时钟显示-->
+<form name="show_time" onSubmit="0">
+  <h2><span class="STYLE17">Time Now</span>  
+    <input type="text" name="name1" size=16 value="">
+<div style="width:1cm;" id="hutia"></div>
+
+<div align="center">
+    <h2><a class="STYLE8">导航</a></h2>
+</div>
+<p align="left">
+	Search Engine <a href="https://www.google.com/"target=_blank>Google</a> <a href="https://scholar.google.com/"target=_blank>GoogleScholar</a> <a href="http://www.bing.com/"target=_blank>必应</a> <a href="http://www.baidu.com/"target=_blank>百度</a>  <a href="http://www.ncbi.nlm.nih.gov/"target=_blank>NCBI</a> <a href="http://ftp.ncbi.nlm.nih.gov/"target=_blank>NCBI-FTP</a> <a href="http://asia.ensembl.org/info/data/ftp/index.html"target=_blank>Ensembl-FTP</a> <a href="http://genome.ucsc.edu/"target=_blank>UCSC</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed"target=_blank>Pubmed</a> <a href="http://emuch.net/bbs/forumdisplay.php?fid=158"target=_blank>小木虫文献求助</a>
+<br>
+校园快捷 <a href="http://www.cnu.edu.cn/"target=_blank> 首都师范大学</a> <a href="http://202.204.209.200/"target=_blank>首师大生命科学学院</a> <a href="http://jzd.cnu.edu.cn/index.jsp"target=_blank>统一门户</a> <a href="http://202.204.214.93:8331/V"target=_blank>学术资源</a> <a href="http://202.204.214.94:8991/F?func=bor-info"target=_blank>电子图书馆</a> <a href="http://tv.cnu.edu.cn/index.php?controller=Default"target=_blank>在线流媒体</a> <a href="ftp://jszc.cnu.edu.cn/"target=_blank>JSZC_FTP</a> <a href="ftp://media.cnu.edu.cn/"target=_blank>Media_FTP</a>
+<br>
+公司快捷 <a href="http://oms.novogene.com/"target=_blank>NGOMS</a> <a href="http://vpn.novogene.cn/openvpn/"target=_blank>NGVPN</a> <a href="http://nhzysw.21tb.com"target=_blank>NGEL</a> <a href="http://www.big.ac.cn/"target=_blank>BIG</a> <a href="https://jinshuju.net/"target=_blank>金数据</a> <a href="http://www.wenjuan.com/"target=_blank>问卷网</a> <a href="http://www.las.ac.cn/index.jsp"target=_blank>LAS</a> <a href="http://192.168.13.86"target=_blank> 考勤系统</a> <a href="http://www.bcc.ac.cn/"target=_blank>北京市计算中心</a> <a href="http://neiwang.bjast.ac.cn/"target=_blank>BJAST内部信息网</a> <a href="http://124.42.63.52:8080/Portal/"target=_blank>生物云平台</a>
+<br>
+Research <a href="https://www.coursera.org/"target=_blank>Coursera</a>  <a href="http://seqanswers.com/"target=_blank>SEQanswers</a> <a href="http://www.linuxquestions.org/questions/index.php"target=_blank>LinuxQuestions</a> <a href="http://www.medsci.cn/sci/"target=_blank>MedSci</a> <a href="http://nature.bio1000.com"target=_blank>Nature中文</a> <a href="http://www.biodiscover.com/"target=_blank>生物探索</a> <a href="http://www.bio360.net/"target=_blank>生物360</a> <a href="http://www.sciencenet.cn/"target=_blank>科学网</a> <a href="http://www.ebiotrade.com/"target=_blank>生物通</a> <a href="http://www.bioon.com/"target=_blank>生物谷</a> <a href="http://www.bioeye.cn/"target=_blank>看生物</a>
+  <br>
+IT   <a href="http://tech.163.com/"target=_blank>网易科技</a> <a href="http://www.leiphone.com/"target=_blank>雷锋网</a> <a href="http://www.36kr.com/"target=_blank>36氪</a> <a href="http://www.ifanr.com/"target=_blank>爱范儿</a> <a href="http://www.iheima.com/"target=_blank>i黑马</a> <a href="http://www.huxiu.com/"target=_blank>虎嗅</a> <a href="http://www.guokr.com/"target=_blank>果壳</a> <a href="http://bbs.imp3.net/"target=_blank>IMP3</a> <a href="http://www.cnbeta.com"target=_blank>cnbeta</a> <a href="http://www.gfan.com/"target=_blank>机锋</a> <a href="http://cn.engadget.com/"target=_blank>Engadget</a> <a href="http://www.udpwork.com/"target=_blank>IT牛人</a> <a href="http://techcat.org/"target=_blank>TechCatalogue</a>
+<br>
+  Email  <a href="http://mail.novogene.com/"target=_blank>NGMail</a>  <a href="http://email.163.com/"target=_blank>163Mail</a> <a href="http://mail.big.ac.cn/"target=_blank>BIGMail</a> <a href="http://mail.hygenomics.com/"target=_blank>HY企邮</a> <a href="https://mail.google.com"target=_blank>Gmail</a> <a href="https://mail.qq.com"target=_blank>Foxmail</a> <a href="http://mail.aliyun.com/"target=_blank>AliMail</a> <a href="http://mail.sina.com.cn/"target=_blank>SinaMail</a> <a href="http://login.live.com/"target=_blank>HotMail</a> <a href="http://www.126.com/"target=_blank>126Mail</a> <a href="http://mail.cn.yahoo.com/"target=_blank>YahooMail</a>
+  <br>
+  SNS <a href="http://weibo.com"target=_blank> 新浪微博</a> <a href="http://c.blog.sina.com.cn/cblog.php"target=_blank> 新浪长微博</a> <a href="http://www.renren.com/"target=_blank> 人人网</a> <a href="http://www.linkedin.com"target=_blank>LinkedIn</a><a href="http://www.douban.com/"target=_blank> 豆瓣</a> <a href="http://www.zhihu.com/"target=_blank>知乎</a> <a href="https://www.researchgate.net"target=_blank>ResearchGate</a> <a href="http://www.facebook.com/"target=_blank>Facebook</a> <a href="http://twitter.com/"target=_blank>Twitter</a> <a href="http://www.autohome.com.cn/"target=_blank>汽车之家</a><br>
+  音视频 <a href="http://www.51voa.com/"target=_blank> 51VOA</a> <a href="http://www.youku.com/"target=_blank> 优酷</a> <a href="http://www.mtime.com/"target=_blank> Mtime <a href="http://www.songtaste.com/"target=_blank>SongTaste</a>
+  <br>
+  工具 <a href="http://co.youdao.com/"target=_blank>有道协作</a> <a href="https://www.alipay.com/"target=_blank>支付宝</a> <a href="https://cmpay.10086.cn/" target=_blank>移动和包</a> <a href="http://www.boc.cn/"target=_blank>中国银行</a> <a href="http://www.cmbchina.com/"target=_blank>招商银行</a> <a href="https://ppm.yiji.com/"target=_blank>易极付</a> <a href="http://www.10010.com/"target=_blank>联通</a> <a href="http://www.bj.10086.cn/"target=_blank>移动</a> <a href="https://mybank.icbc.com.cn/icbc/perbank/index.jsp"target=_blank>工商银行</a> <a href="http://www.bankofbeijing.com.cn/index.html"target=_blank>北京银行</a> <a href="http://dz.bjjtgl.gov.cn/service/"target=_blank>交管</a> <a href="http://www.12306.cn/mormhweb/"target=_blank>12360</a> <a href="http://www.bjld.gov.cn/csibiz/indinfo/login.jsp"target=_blank>社保</a> <a href="http://tool.114la.com/"target=_blank>114啦工具箱</a>
+  <br>
+网购  <a href="https://www.taobao.com/"target=_blank>淘宝</a> <a href="http://www.tmall.com/"target=_blank>天猫</a> <a href="http://www.etao.com"target=_blank>一淘</a> <a href="http://www.360buy.com/"target=_blank>京东</a> <a href="http://www.suning.com/"target=_blank>苏宁易购</a> <a href="http://www.amazon.cn"target=_blank>亚马逊</a> <a href="http://ju.taobao.com/"target=_blank>聚划算</a> <a href="http://www.gome.com.cn" target=_blank>国美在线</a> <a href="http://www.dangdang.com/"target=_blank>当当</a> <a href="http://www.vancl.com/" target=_blank>凡客</a> <a href="http://www.lefeng.com"target=_blank>乐蜂</a> <a href="http://bj.jumei.com"target=_blank>聚美优品</a> <a href="http://www.letao.com/"target=_blank>乐淘</a> <a href="http://www.dianping.com/"target=_blank>大众点评网</a> <a href="http://www.womai.com/"target=_blank>中粮我买网</a> <a href="http://www.ibmbjb.com"target=_blank>IBM水货</a> <a href="http://www.upnb.com/bbs/index.php"target=_blank>Thinkpad游本网</a> <a href="http://www.tuan800.com/" target=_blank>团800</a> <a href="http://www.meilishuo.com/" target=_blank>美丽说</a> <a href="http://www.mogujie.com/" target=_blank>蘑菇街</a></p>
+</body> 
+</html>
